@@ -1,3 +1,7 @@
+from dataclasses import dataclass
+
+
+@dataclass
 class Product:
     """
     Класс продукта
@@ -6,12 +10,6 @@ class Product:
     price: float
     description: str
     quantity: int
-
-    def __init__(self, name, price, description, quantity):
-        self.name = name
-        self.price = price
-        self.description = description
-        self.quantity = quantity
 
     def check_quantity(self, quantity) -> bool:
         if self.quantity >= quantity:

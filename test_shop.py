@@ -23,7 +23,7 @@ class TestProducts:
     """
 
     def test_product_check_quantity(self, product):
-        assert product.check_quantity(1) == True
+        assert product.check_quantity(1) is True
 
     def test_product_buy(self, product):
         product.buy(1)
